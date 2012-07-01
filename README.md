@@ -1,6 +1,6 @@
 ScreenBin
 ==========
-shorturls for screenshots @ [screenb.in](http://screenb.in/)
+short URLs for screenshots @ [screenb.in](http://screenb.in/)
 
 Requirements
 ---------------------
