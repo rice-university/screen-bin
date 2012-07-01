@@ -16,6 +16,10 @@ Setup
 4. Get an Amazon AWS account
 5. Add your S3 keys to [vendors/S3.php](https://github.com/dqian/screen-bin/blob/master/vendors/S3.php) (line 58) and [vendors/SimpleImage.php](https://github.com/dqian/screen-bin/blob/master/vendors/SimpleImage.php) (lines 48/49)
 
+Notes
+---------------------
+* only able to paste into Chrome browsers
+
 About
 ---------------------
 Created at the Rice Summer Hackathon 2012 held at the [STARTHouston](http://starthouston.com) co-working space.
