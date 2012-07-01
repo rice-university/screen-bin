@@ -1,4 +1,4 @@
 screen-bin
 ==========
 
-short URLs for screenshots
+shorturls for screenshots

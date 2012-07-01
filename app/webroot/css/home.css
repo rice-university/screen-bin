@@ -1,0 +1,76 @@
+#screenshot-container {
+	/*background-color: orange;*/
+	width: 80%;
+	padding: 15px;
+	height: 670px;
+	margin: auto;
+}
+
+#screenshot-image {
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+}
+
+#loading-status-container {
+	display: none;
+	/* background-color: black; */
+	opacity: 0.6;
+	background-image: url('../img/ajax-loader.gif');
+	background-repeat:no-repeat;
+	background-position: center center;
+	background-size: 90px 90px;
+	width: 100%;
+	height: 100%;
+}
+
+#url-container {
+	display: none;
+	width: 100%;
+	height: 100%;	
+	text-align: center;
+}
+
+#url-label {
+	display: inline-block;
+	background-color: rgba(0,0,0,0.6);
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 80px;
+	margin: auto;
+	margin-top: 295px; /* 670/2 - this.height */
+	border-radius: 15px;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+}
+
+#screenshot-url {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#instructions-container {
+	/* display: none; */
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+#instructions-label {
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 120px;
+	margin: auto;
+	margin-top: 245px; /* 670/2 - this.height */
+	line-height: 80px;
+	font-size: 30px;
+	color: white;
+	text-shadow: 0px 0px 10px #000000;
+	text-align: center;
+	font-weight: bold;
+}

@@ -1,0 +1,77 @@
+2012-06-30 16:01:08 Error: [MissingControllerException] Controller class [objectBlob]Controller could not be found.
+#0 /Users/dqian/Documents/Repositories/screen-bin/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-06-30 16:38:57 Error: [MissingControllerException] Controller class ItemsController could not be found.
+#0 /Users/dqian/Documents/Repositories/screen-bin/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-06-30 16:39:07 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Users/dqian/Documents/Repositories/screen-bin/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-06-30 16:39:09 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Users/dqian/Documents/Repositories/screen-bin/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-06-30 18:02:42 Error: [MissingControllerException] Controller class PhotosController could not be found.
+#0 /Users/dqian/Documents/Repositories/screen-bin/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-06-30 18:49:59 Error: [MissingControllerException] Controller class PhotosController could not be found.
+#0 /Users/dqian/Documents/Repositories/screen-bin/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-06-30 19:11:40 Error: [MissingControllerException] Controller class AsdfController could not be found.
+#0 /Users/dqian/Documents/Repositories/screen-bin/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-06-30 19:23:19 Error: [MissingLayoutException] Layout file "/Users/dqian/Documents/Repositories/screen-bin/app/View/Layouts/share.ctp" is missing.
+#0 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/View/View.php(503): View->_getLayoutFileName('share')
+#1 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/View/View.php(473): View->renderLayout('', 'share')
+#2 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#3 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#4 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#5 /Users/dqian/Documents/Repositories/screen-bin/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-06-30 19:25:50 Error: [MissingLayoutException] Layout file "/Users/dqian/Documents/Repositories/screen-bin/app/View/Layouts/share.ctp" is missing.
+#0 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/View/View.php(503): View->_getLayoutFileName('share')
+#1 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/View/View.php(473): View->renderLayout('', 'share')
+#2 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#3 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#4 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#5 /Users/dqian/Documents/Repositories/screen-bin/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-06-30 19:28:20 Error: [MissingLayoutException] Layout file "/Users/dqian/Documents/Repositories/screen-bin/app/View/Layouts/share.ctp" is missing.
+#0 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/View/View.php(503): View->_getLayoutFileName('share')
+#1 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/View/View.php(473): View->renderLayout('', 'share')
+#2 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#3 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Routing/Dispatcher.php(110): Controller->render()
+#4 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#5 /Users/dqian/Documents/Repositories/screen-bin/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-06-30 22:48:58 Error: [MissingConnectionException] Database connection "SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'mysql-shared-02.phpfog.com' (4)" is missing, or could not be created.
+#0 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Model/Datasource/DboSource.php(245): Mysql->connect()
+#1 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Model/ConnectionManager.php(101): DboSource->__construct(Array)
+#2 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Model/Model.php(3417): ConnectionManager::getDataSource('default')
+#3 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Model/Model.php(1083): Model->setDataSource('default')
+#4 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Model/Model.php(3443): Model->setSource('screenshots')
+#5 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Model/Model.php(1292): Model->getDataSource()
+#6 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Model/Model.php(1467): Model->schema()
+#7 /Users/dqian/Documents/Repositories/screen-bin/app/Model/Screenshot.php(8): Model->create()
+#8 /Users/dqian/Documents/Repositories/screen-bin/app/Controller/PagesController.php(133): Screenshot->addScreenshot('70040', 'https://s3.amaz...')
+#9 [internal function]: PagesController->apiUploadScreenshot()
+#10 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/dqian/Documents/Repositories/screen-bin/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-06-30 22:49:45 Error: [MissingConnectionException] Database connection "SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'mysql-shared-02.phpfog.com' (4)" is missing, or could not be created.
+#0 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Model/Datasource/DboSource.php(245): Mysql->connect()
+#1 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Model/ConnectionManager.php(101): DboSource->__construct(Array)
+#2 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Model/Model.php(3417): ConnectionManager::getDataSource('default')
+#3 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Model/Model.php(1083): Model->setDataSource('default')
+#4 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Model/Model.php(3443): Model->setSource('screenshots')
+#5 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Model/Model.php(1292): Model->getDataSource()
+#6 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Model/Model.php(1467): Model->schema()
+#7 /Users/dqian/Documents/Repositories/screen-bin/app/Model/Screenshot.php(8): Model->create()
+#8 /Users/dqian/Documents/Repositories/screen-bin/app/Controller/PagesController.php(133): Screenshot->addScreenshot('ee54c', 'https://s3.amaz...')
+#9 [internal function]: PagesController->apiUploadScreenshot()
+#10 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Routing/Dispatcher.php(103): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/dqian/Documents/Repositories/screen-bin/lib/Cake/Routing/Dispatcher.php(85): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/dqian/Documents/Repositories/screen-bin/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
