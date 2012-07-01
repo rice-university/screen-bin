@@ -4,10 +4,16 @@
 
 #screenshot-container {
 	/*background-color: orange;*/
-	width: 80%;
-	padding: 15px;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	/*height: 670px;*/
 	margin: auto;
+	overflow: auto;
+}
+
+#overflow-container {
+	width: 100%;
 }
 
 #screenshot-image {

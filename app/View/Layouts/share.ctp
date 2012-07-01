@@ -23,8 +23,7 @@
 	<head>
 		<?php echo $this->Html->charset(); ?>
 		<title>
-			<?php echo $cakeDescription ?>:
-			<?php echo $title_for_layout; ?>
+			<?php echo $cakeDescription ?>
 		</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<?php
@@ -32,6 +31,7 @@
 			echo $this->Html->css('bootstrap.min.css');
 			echo $this->Html->script('jquery-1.7.2.js');
 			echo $this->Html->script('bootstrap.js');
+			echo $this->Html->script('share');
 			echo $this->Html->css('style');
 			echo $this->Html->css('share');
 			//echo $this->Html->script('mixpanel.js');
@@ -50,12 +50,14 @@
 			</div>
 			<div id='content'>
 				<div id='screenshot-container'>
-					<img id='screenshot-image' src="<?php echo $screenshot_amazon_url;?>">
+					<div id='overflow-container'>
+						<img id='screenshot-image' src="<?php echo $screenshot_amazon_url;?>">
+					</div>
 				</div>
 			</div>
 			<div id='footer'>
 				<div id='about'>
-					created by <a href='twitter.com/dennis_qian'>@dennis_qian</a>.
+					created by <a href='http://twitter.com/dennis_qian'>@dennis_qian</a>.
 				</div>
 				<a href="https://github.com/dqian/screen-bin">
 					<img id='github' src='http://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png' alt='Fork me on Github'>
@@ -63,4 +65,15 @@
 			</div>
 		</div>
 	</body>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-33023823-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
 </html>
