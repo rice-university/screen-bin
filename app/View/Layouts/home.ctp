@@ -26,8 +26,9 @@
 			<?php echo $cakeDescription ?>
 		</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 		<?php
-			echo $this->Html->meta('icon');
 			echo $this->Html->css('bootstrap.min.css');
 			echo $this->Html->script('jquery-1.7.2.js');
 			echo $this->Html->script('bootstrap.js');
