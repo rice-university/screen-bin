@@ -76,7 +76,7 @@
 					created by <a href='twitter.com/dennis_qian'>@dennis_qian</a>.
 				</div>
 			</div>
-			<a href="#">
+			<a href='https://github.com/dqian/screen-bin'>
 				<img id='github' src='http://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png' alt='Fork me on Github'>
 			</a>
 		</div>
