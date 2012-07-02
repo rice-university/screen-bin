@@ -50,8 +50,9 @@ function showLoading() {
 
 function showScreenshotUrl(url) {
 	$('.overlay').css('display','none');
-	$('#screenshot-url').text(url);
+	$('#screenshot-url').val(url);
 	$('#url-container').css('display','block');
+	$('#screenshot-url').select();
 }
 
 function sendScreenshotForUpload(file) {

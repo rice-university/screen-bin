@@ -64,6 +64,24 @@ class PagesController extends AppController {
 	}
 
 	public function home() {
+		$os = env('HTTP_USER_AGENT');
+
+		$mac = strpos($os, 'Macintosh') ? true : false;
+		$win = strpos($os, 'Windows') ? true : false;
+
+		$instruction_1 = 'Take a screenshot.';
+		$instruction_2 = 'Paste.';
+
+		if ($mac) {
+			$instruction_1 = 'Ctrl+Shift+Cmd+3.';
+			$instruction_2 = 'Cmd+V.';
+		} else if ($win) {
+			$instruction_2 = 'Ctrl+V.';
+		}
+
+		$this->set('instruction_1', $instruction_1);
+		$this->set('instruction_2', $instruction_2);
+
 		$url = $this->here;
 		if($url == '/') {
 			$this->set('title_for_layout', 'Screen Bin');

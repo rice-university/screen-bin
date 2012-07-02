@@ -1,5 +1,4 @@
 #screenshot-container {
-	/*background-color: orange;*/
 	width: 80%;
 	padding: 15px;
 	height: 670px;
@@ -16,7 +15,6 @@
 
 #loading-status-container {
 	display: none;
-	/* background-color: black; */
 	opacity: 0.6;
 	background-image: url('../img/ajax-loader.gif');
 	background-repeat:no-repeat;
@@ -38,7 +36,9 @@
 	background-color: rgba(0,0,0,0.6);
 	padding-left: 10px;
 	padding-right: 10px;
-	height: 80px;
+	height: 20px;
+	padding-top: 21px;
+	padding-bottom: 30px;
 	margin: auto;
 	margin-top: 295px; /* 670/2 - this.height */
 	border-radius: 15px;
@@ -49,12 +49,21 @@
 }
 
 #screenshot-url {
-	margin-top: 30px;
-	margin-bottom: 30px;
+	padding: 0px;
+	margin: 0px;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	background-color: rgba(0,0,0,0);
+	border: none;
+	font-size: 20px;
+	height: 20px;
+	line-height: 20px;
+	box-shadow: none;
+	cursor: auto
 }
 
 #instructions-container {
-	/* display: none; */
 	width: 100%;
 	height: 100%;
 	text-align: center;

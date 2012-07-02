@@ -29,10 +29,11 @@
 		<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 		<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 		<?php
-			echo $this->Html->css('bootstrap.min.css');
 			echo $this->Html->script('jquery-1.7.2.js');
 			echo $this->Html->script('bootstrap.js');
+			echo $this->Html->script('script');
 			echo $this->Html->script('share');
+			echo $this->Html->css('bootstrap.min.css');
 			echo $this->Html->css('style');
 			echo $this->Html->css('share');
 			//echo $this->Html->script('mixpanel.js');
@@ -58,7 +59,7 @@
 			</div>
 			<div id='footer'>
 				<div id='about'>
-					created by <a href='http://twitter.com/dennis_qian'>@dennis_qian</a>.
+					created by <a href='http://twitter.com/dennis_qian' id='twitter'>@dennis_qian</a>.
 				</div>
 				<a href="https://github.com/dqian/screen-bin">
 					<img id='github' src='http://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png' alt='Fork me on Github'>
