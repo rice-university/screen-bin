@@ -18,6 +18,13 @@ class Screenshot extends AppModel {
         $screenshots = $this->findAllByUrlHash($url_hash);
         return $screenshots;
     }
+
+    /*
+     * Gets the total number of screenshots
+     */
+    public function getTotalScreenshotCount() {
+        return $this->find('count');
+    }
 }
 
 ?>

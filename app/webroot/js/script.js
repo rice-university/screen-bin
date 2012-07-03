@@ -1,11 +1,13 @@
-/* 
+/*
  * Initializations
  */
 $(document).ready(function() {
 	$('#logo').children().tooltip({
 		placement: 'right',
-		title: 'requires Google Chrome'
+		title: $('#logo').attr('total-shots')+' screenshots taken!',
+		trigger: 'manual'
 	});
+	$('#logo').children().tooltip('show');
 
 	$('#twitter').tooltip({
 		placement: 'bottom',

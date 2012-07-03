@@ -41,9 +41,9 @@
 	</head>
 
 	<body>
-		<div id='page'> 
+		<div id='page'>
 			<div id='header'>
-				<div id='logo'>
+				<div id='logo' total-shots='<?php echo $num_total_screenshots; ?>'>
 					<a href='/'>ScreenBin</a>
 				</div>
 				<div id='slogan'>

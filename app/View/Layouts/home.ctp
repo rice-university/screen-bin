@@ -36,14 +36,13 @@
 			echo $this->Html->css('bootstrap.min.css');
 			echo $this->Html->css('style');
 			echo $this->Html->css('home');
-			//echo $this->Html->script('mixpanel.js');
 		?>
 	</head>
 
 	<body>
-		<div id='page'> 
+		<div id='page'>
 			<div id='header'>
-				<div id='logo'>
+				<div id='logo' total-shots='<?php echo $num_total_screenshots; ?>'>
 					<a href='/'>ScreenBin</a>
 				</div>
 				<div id='slogan'>
@@ -53,6 +52,7 @@
 			<div id='content'>
 				<div id='screenshot-container'>
 					<div id='screenshot-image'>
+						<img id='screenshot-image-url'src="">
 						<div id='instructions-container' class='overlay'>
 							<div id='instructions-label'>
 								<?php echo $instruction_1; ?></br>
@@ -63,9 +63,9 @@
 						<div id='loading-status-container' class='overlay'>
 							<!-- -->
 						</div>
-						
+
 						<div id='url-container' class='overlay'>
-							<div id='url-label'>
+							<div id='url-label' rel='tooltip'>
 								<input type='text' readonly='readonly' id='screenshot-url'>
 							</div>
 						</div>

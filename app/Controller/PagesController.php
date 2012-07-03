@@ -64,23 +64,50 @@ class PagesController extends AppController {
 	}
 
 	public function home() {
-		$os = env('HTTP_USER_AGENT');
+		$ua = env('HTTP_USER_AGENT');
 
-		$mac = strpos($os, 'Macintosh') ? true : false;
-		$win = strpos($os, 'Windows') ? true : false;
+		$chrome = strpos($ua, 'Chrome') ? true : false;
+		if($chrome) {
+			$mac = strpos($ua, 'Macintosh') ? true : false;
+			$win = strpos($ua, 'Windows') ? true : false;
 
-		$instruction_1 = 'Take a screenshot.';
-		$instruction_2 = 'Paste.';
+			$instruction_1 = 'Take a screenshot.';
+			$instruction_2 = 'Paste.';
 
-		if ($mac) {
-			$instruction_1 = 'Ctrl+Shift+Cmd+3.';
-			$instruction_2 = 'Cmd+V.';
-		} else if ($win) {
-			$instruction_2 = 'Ctrl+V.';
+			if ($mac) {
+				$instruction_1 = 'Ctrl+Shift+Cmd+3.';
+				$instruction_2 = 'Cmd+V.';
+			} else if ($win) {
+				$instruction_2 = 'Ctrl+V.';
+			}
+
+			$this->set('instruction_1', $instruction_1);
+			$this->set('instruction_2', $instruction_2);
+		} else {
+			$firefox = strpos($ua, 'Firefox') ? true : false;
+			$msie = strpos($ua, 'MSIE') ? true : false;
+			$opera = preg_match("/\bOpera\b/i", $ua);
+			$safari = strpos($ua, 'Safari') ? true : false;
+
+			$browser = 'an unsupported browser';
+			if($firefox) {
+				$browser = 'Firefox';
+			} else if ($msie) {
+				$browser = 'Internet Explorer';
+			} else if ($opera) {
+				$browser = 'Opera';
+			} else if ($safari) {
+				$browser = 'Safari';
+			}
+
+			$instruction_1 = 'Uh oh! Looks like you\'re using '.$browser.'.';
+			$instruction_2 = 'ScreenBin only works with Google Chrome.';
+
+			$this->set('instruction_1', $instruction_1);
+			$this->set('instruction_2', $instruction_2);
 		}
 
-		$this->set('instruction_1', $instruction_1);
-		$this->set('instruction_2', $instruction_2);
+		$this->set('num_total_screenshots', $this->Screenshot->getTotalScreenshotCount());
 
 		$url = $this->here;
 		if($url == '/') {
@@ -131,7 +158,8 @@ class PagesController extends AppController {
 			$response_array = array(
 				'screenshot_url' => $screenshot_url,
 				'screenshot_hash' => $screenshot_hash,
-				'amazon_url' => $screenshot_url_amazon
+				'hosted_url' => $screenshot_url_amazon,
+				'num_total_screenshots' => $this->Screenshot->getTotalScreenshotCount(),
 			);
 			$this->response->body(json_encode($response_array));
 		} else {
